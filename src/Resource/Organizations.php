@@ -176,9 +176,7 @@ class Organizations extends Resource
                     'realm' => $realm,
                     'orgId' => $id,
                 ],
-                payload: [
-                    'userId' => $userId,
-                ],
+                payload: $userId,
                 contentType: ContentType::JSON,
             ),
         );

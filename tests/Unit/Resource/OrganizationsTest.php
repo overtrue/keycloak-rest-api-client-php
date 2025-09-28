@@ -250,9 +250,7 @@ class OrganizationsTest extends TestCase
                 'realm' => 'test-realm',
                 'orgId' => 'uuid',
             ],
-            [
-                'userId' => 'test-user-id',
-            ],
+            'test-user-id',
             contentType: ContentType::JSON,
         );
 

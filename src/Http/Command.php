@@ -15,7 +15,7 @@ readonly class Command
         /** @var array<string, mixed> */
         private array $parameters = [],
         /** @var Representation|Collection|array<string, mixed>|null */
-        private Representation|Collection|array|null $payload = null,
+        private Representation|Collection|array|string|null $payload = null,
         /** @var Criteria|array<string, string>|null */
         private Criteria|array|null $criteria = null,
         private ContentType $contentType = ContentType::JSON,
@@ -45,9 +45,9 @@ readonly class Command
     }
 
     /**
-     * @return Representation|Collection|array<string, mixed>|null
+     * @return Representation|Collection|array<string, mixed>|string|null
      */
-    public function getPayload(): Representation|Collection|array|null
+    public function getPayload(): Representation|Collection|array|string|null
     {
         return $this->payload;
     }
